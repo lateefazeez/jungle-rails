@@ -3,33 +3,30 @@
 </header>
 
 <div class="panel panel-default items">
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>Details</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-        <tbody>
-          <tr>
-            <td>
-              <h4>Total Products in Database</h4>
-            </td>
-            <td>
-            <%= @products.size %>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h4>Product Categories in Database</h4>
-            </td>
-            <td>
-            <%= @categories.size %>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Details</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <h4><%= link_to 'Total Products in Database', :admin_products %> </h4>
+        </td>
+        <td>
+        <%= @products.size %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4><%= link_to 'Product Categories in Database', :admin_categories %> </h4>
+        </td>
+        <td>
+          <%= @categories.size %>
+        </td>
+    </tr>
+</tbody>
+  </table>
+</div>

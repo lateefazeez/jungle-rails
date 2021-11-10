@@ -3,4 +3,5 @@ class Admin::DashboardController < ApplicationController
     @products = Product.order(id: :desc).all
     @categories = Category.all
   end
+
 end
